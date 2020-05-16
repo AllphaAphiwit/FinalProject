@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9D28E1B-A6F3-4ACB-B818-9FBB76A36136}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Final_Project</RootNamespace>
+    <AssemblyName>Final Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.7.0.7, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.7.0.7\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.19\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBaseUser.cs" />
+    <Compile Include="PanalHisUse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanalHisUse.Designer.cs">
+      <DependentUpon>PanalHisUse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanalWaterRate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanalWaterRate.Designer.cs">
+      <DependentUpon>PanalWaterRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userlogin.Designer.cs">
+      <DependentUpon>userlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Globals.cs" />
+    <Compile Include="MainProgram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainProgram.Designer.cs">
+      <DependentUpon>MainProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanalEdit_Profies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanalEdit_Profies.Designer.cs">
+      <DependentUpon>PanalEdit_Profies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanalHis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanalHis.Designer.cs">
+      <DependentUpon>PanalHis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PanalWaterCal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PanalWaterCal.Designer.cs">
+      <DependentUpon>PanalWaterCal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="username.cs" />
+    <Compile Include="Wellcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wellcome.Designer.cs">
+      <DependentUpon>Wellcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PanalHisUse.resx">
+      <DependentUpon>PanalHisUse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanalWaterRate.resx">
+      <DependentUpon>PanalWaterRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userlogin.resx">
+      <DependentUpon>userlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainProgram.resx">
+      <DependentUpon>MainProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanalEdit_Profies.resx">
+      <DependentUpon>PanalEdit_Profies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanalHis.resx">
+      <DependentUpon>PanalHis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanalWaterCal.resx">
+      <DependentUpon>PanalWaterCal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wellcome.resx">
+      <DependentUpon>Wellcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
